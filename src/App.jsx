@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import PublicRoute from './routes/PublicRoute';
+import PrivateRoute from './routes/PrivateRoute';
 
 function App() {
   const [user,setUser]=useState({
@@ -13,7 +15,11 @@ function App() {
 
   return (
     <>
-      
+      {
+        islogged?
+        <PrivateRoute user={user} setUser={setUser}/>:
+        <PublicRoute user={user} setUser={setUser}/>
+      }
     </>
   )
 }
