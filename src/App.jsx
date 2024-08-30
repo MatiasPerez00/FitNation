@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       {
-        islogged?
+        user.islogged?
         <PrivateRoute user={user} setUser={setUser}/>:
         <PublicRoute user={user} setUser={setUser}/>
       }
