@@ -1,6 +1,6 @@
 import React from 'react'
 import './Login.css'
-import { Container, Form, FormControl, FormGroup, FormLabel} from 'react-bootstrap'
+import { Button, Container, Form, FormControl, FormGroup, FormLabel} from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
 
 const Login = () => {
@@ -30,6 +30,7 @@ const Login = () => {
                 }) }
             />
           </FormGroup>
+          <Button type='submit'>Iniciar sesión</Button>
         </Form>
       </Container>
     </div>
