@@ -1,10 +1,7 @@
 import React from 'react'
 import './Login.css'
-<<<<<<< HEAD
 import { Button, Container, Form, FormControl, FormGroup, FormLabel} from 'react-bootstrap'
-=======
-import { Container, Form, FormControl, FormGroup, FormLabel } from 'react-bootstrap'
->>>>>>> 5add9bc12c5d9cdaed0cd7fbd7bf3cf013f717e1
+
 import { useForm } from 'react-hook-form'
 
 const Login = () => {
